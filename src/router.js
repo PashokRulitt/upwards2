@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Main from './views/main.vue'
+import Main from './components/main.vue'
 
 Vue.use(Router)
 
@@ -9,7 +9,7 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [
     {
-      path: '/main',
+      path: '/',
       name: 'home',
       component: Main
     }

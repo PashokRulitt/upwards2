@@ -477,6 +477,9 @@
     height: 45px;
     width: 152px;
   }
+  #mobile{
+    display: none;
+  }
   @media screen and (max-width: 1024px) {
     body{
       overflow-x: hidden;
