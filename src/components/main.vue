@@ -2,7 +2,7 @@
   <div>
     <div id="desktop">
       <main>
-        <div id="slogan">
+        <div class="slogan">
           <p>Website made by <span class="programmers">programmers</span>,</p>
           <p>for <span class="programmers2" >programmers</span></p>
         </div>
@@ -91,13 +91,9 @@
     </div>
     <div id="mobile">
       <main>
-        <div v-show="topnav_button_m" class="midnav_m">
-          <a href="#">forum</a>
-          <a href="#">learning</a>
-          <a href="#">events</a>
-          <a href="#">success story</a>
-          <a href="#">dictionary</a>
-          <a href="#">team builder</a>
+        <div class="slogan">
+          <p>Website made by <span class="programmers">programmers</span>,</p>
+          <p>for <span class="programmers2" >programmers</span></p>
         </div>
         <flickity ref="flickity" :options="flickityOptions">
           <div class="carousel-cell" >
@@ -212,7 +208,6 @@
         name: "main",
         data(){
           return{
-            topnav_button_m: false,
             flickityOptions: {
               autoPlay:true,
               draggable:true,
@@ -358,13 +353,14 @@
   /*MAin info blocks end*/
   /*Website made by programmers,
   for programmers*/
-  #slogan{
+  .slogan{
     font-family: 'Comfortaa', cursive;
     font-weight: 100;
     font-size: 40px;
     margin-top: 100px;
     margin-left: 30%;
   }
+
   .programmers{
     background-color: #7CDAC1;
   }
@@ -631,15 +627,7 @@
       font-size: 80px;
     }
 
-    .midnav_m{
-      display: flex;
-      flex-direction: column;
-      margin-top: 20px;
 
-      border: 1px solid black;
-      border-top: 5px solid black;
-      /*float: left;*/
-    }
     .midnav_m a{
       margin-top: 10px;
       margin-left: 5%;
