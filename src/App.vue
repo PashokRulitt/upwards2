@@ -1,8 +1,7 @@
 <template>
   <div id="app">
     <div class="header">
-    <div id="header__logo"><span id="upwards">Upwards!</span><span id="com">.com </span><span	id="slesh">/</span><span id="home">home</span></div>
-
+      <a href="/"><div id="header__logo"><span id="upwards">Upwards!</span><span id="com">.com </span><span	id="slesh">/</span><span id="home">home</span></div></a>
       <div class="topnav " id="myTopnav">
         <a href="#">forum</a>
         <a href="#">learning</a>
