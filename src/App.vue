@@ -10,10 +10,11 @@
         <a href="#">success story</a>
         <a href="#">dictionary</a>
         <a href="#">team builder</a>
-        <button @click="topnav_button=!topnav_button" class="nav_button">&#9776;</button>
+        <button @click="show_topnav=!show_topnav" class="nav_button">&#9776;</button>
+        <a href="/login">login</a>
       </div>
     </div>
-    <div v-show="topnav_button" class="midnav">
+    <div v-show="show_topnav" class="midnav">
       <a href="#">forum</a>
       <a href="#">learning</a>
       <a href="#">events</a>
@@ -22,6 +23,53 @@
       <a href="#">team builder</a>
     </div>
     <router-view/>
+    <footer>
+      <div class="foot_wrapper_m">
+        <div class="foot_first_m">
+          <div class="foot_first_m_name" @mouseover="showUpwards=true; showExplore=false; showFollow=false; showSubscribe=false "><p>Upwards!</p></div>
+          <div class="foot_first_m_body" v-show="showUpwards">
+            <p>Website made by programmers,</p>
+            <p>for programmers</p>
+            <p>Explore.Study.Polish</p>
+          </div>
+
+        </div>
+        <div class="explore_m">
+          <div class="explore_m_name" @mouseover="showUpwards=false; showExplore=true; showFollow=false; showSubscribe=false "><p>Explore</p></div>
+          <div class="explore_m_body" v-show="showExplore">
+            <a href="#">Forum</a>
+            <a href="#">Learning</a>
+            <a href="#">Events</a>
+            <a href="#">Success</a>
+            <a href="#">Dictionary</a>
+            <a href="#">Builder</a>
+          </div>
+
+        </div>
+        <div class="follow_m">
+          <div class="follow_m_name" @mouseover="showUpwards=false; showExplore=false; showFollow=true; showSubscribe=false "><p>Follow</p></div>
+          <div class="follow_m_body" v-show="showFollow">
+            <a href="#">Twitter</a>
+            <a href="#">Telegram</a>
+            <a href="#">Facebook</a>
+          </div>
+
+        </div>
+        <div class="subscribe_m">
+          <div class="subscribe_m_name" @mouseover="showUpwards=false; showExplore=false; showFollow=false; showSubscribe=true "><p>Subscribe </p></div>
+          <div class="subscribe_m_body" v-show="showSubscribe">
+            <p>Subscribe to get</p>
+            <p>weekly releases</p>
+            <p>on your email</p>
+            <br>
+            <input type="text" id="inp_m" placeholder="Enter your email:">
+            <br>
+            <button class="sub_m">SUBSCRIBE</button>
+          </div>
+
+        </div>
+      </div>
+    </footer>
   </div>
 </template>
 <script>
@@ -29,12 +77,19 @@
     name: "main",
     data(){
        return{
-         topnav_button: false,
+         showUpwards:false,
+         showExplore:false,
+         showFollow: false,
+         showSubscribe:true,
+         show_topnav: false,
         }
     }
   }
 </script>
 <style>
+  .nav_button{
+    background-image: url("/src/assets/login.jpg");
+  }
   .midnav{
     display: flex;
     flex-direction: column;
@@ -119,7 +174,6 @@
   @media screen and (max-width: 1023px){
     .nav_button{
       font-size: 60px;
-
       display: block;
     }
     .topnav a{
@@ -168,6 +222,128 @@
         font-size: 30px;
       }
   }
+  .foot_first_m{
+    width: 100%;
+    color: white;
+    background-color:darkgray;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .explore_m{
+    background-color: gray;
+    height: 100%;
+    width: 100%;
+    color: white;
+    text-align: center;
+
+  }
+  .explore_m_name{
+    font-weight: 700;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 40px;
+  }
+  .foot_first_m div:nth-child(2) {
+    margin-top: 50px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+  }
+
+  .explore_m div a:nth-child(6){
+    padding-bottom: 10px;
+  }
+  .explore_m a{
+    color: white;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    display: block;
+    margin-bottom: 30px;
+  }
+  .follow_m{
+    background-color: black;
+    width: 100%;
+    color: white;
+    text-align: center;
+    height: 150%;
+  }
+  .follow_m a{
+    color: white;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    display: block;
+    margin-bottom: 30px;
+  }
+  .follow_m_name{
+    font-weight: 700;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 40px;
+
+  }
+  .subscribe_m{
+    color: white;
+    background-color:indianred;
+    width: 100%;
+    text-align: center;
+    height: 150%;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    font-size: 23px;
+  }
+  .subscribe_m_name{
+    font-weight: 700;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 40px;
+    /*margin-bottom: 10px;*/
+  }
+  .subscribe_m_body{
+    margin-top: 40px;
+  }
+
+  .subscribe_m input{
+    opacity: 0.8;
+    background-color: #FFFFFF;
+    text-decoration: none;
+    border: none;
+    border-radius: 25px;
+    height: 45px;
+    width: 269px;
+
+  }
+  .subscribe_m button{
+
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    opacity: 0.8;
+    background-color: #23699F;
+    text-decoration: none;
+    border: none;
+    border-radius: 25px;
+    height: 45px;
+    width: 152px;
+  }
+  .foot_first_m_body{
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .foot_first_m_name{
+    font-weight: 700;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 51px;
+  }
+  .foot_first_m_body p:nth-child(3){
+    margin-top: 30px;
+  }
+  .explore_m_body{
+    margin-top: 40px;
+  }
+  .follow_m_body{
+    margin-top: 40px;
+  }
+
   /*@media screen and (min-width: 1094px){*/
     /*nav{*/
       /*margin-left: 10%*/

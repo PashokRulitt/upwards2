@@ -48,46 +48,46 @@
         </div>
 
       </main>
-      <footer>
-        <div class="foot_wrapper">
-          <div class="foot_first">
-            <p>Upwards!</p>
-            <p>Website made by programmers,</p>
-            <p>for programmers</p>
-            <p>Explore.Study.Polish</p>
-          </div>
-          <div class="explore">
-            <p>Explore</p>
+      <!--<footer>-->
+        <!--<div class="foot_wrapper">-->
+          <!--<div class="foot_first">-->
+            <!--<p>Upwards!</p>-->
+            <!--<p>Website made by programmers,</p>-->
+            <!--<p>for programmers</p>-->
+            <!--<p>Explore.Study.Polish</p>-->
+          <!--</div>-->
+          <!--<div class="explore">-->
+            <!--<p>Explore</p>-->
 
 
-            <a href="#">Forum</a>
-            <a href="#">Learning</a>
-            <a href="#">Events</a>
-            <a href="#">Success</a>
-            <a href="#">Dictionary</a>
-            <a href="#"><B></B>uilder</a>
+            <!--<a href="#">Forum</a>-->
+            <!--<a href="#">Learning</a>-->
+            <!--<a href="#">Events</a>-->
+            <!--<a href="#">Success</a>-->
+            <!--<a href="#">Dictionary</a>-->
+            <!--<a href="#"><B></B>uilder</a>-->
 
-          </div>
-          <div class="follow">
-            <p>Follow</p>
-            <a href="#">Twitter</a>
-            <a href="#">Telegram</a>
-            <a href="#">Facebook</a>
+          <!--</div>-->
+          <!--<div class="follow">-->
+            <!--<p>Follow</p>-->
+            <!--<a href="#">Twitter</a>-->
+            <!--<a href="#">Telegram</a>-->
+            <!--<a href="#">Facebook</a>-->
 
-          </div>
-          <div class="subscribe">
-            <p>Subscribe </p>
-            <p>Subscribe to get</p>
-            <p>weekly releases</p>
-            <p>on your email</p>
-            <br>
-            <input type="text" id="inp" placeholder="Enter your email:">
-            <br>
-            <button class="sub">SUBSCRIBE</button>
+          <!--</div>-->
+          <!--<div class="subscribe">-->
+            <!--<p>Subscribe </p>-->
+            <!--<p>Subscribe to get</p>-->
+            <!--<p>weekly releases</p>-->
+            <!--<p>on your email</p>-->
+            <!--<br>-->
+            <!--<input type="text" id="inp" placeholder="Enter your email:">-->
+            <!--<br>-->
+            <!--<button class="sub">SUBSCRIBE</button>-->
 
-          </div>
-        </div>
-      </footer>
+          <!--</div>-->
+        <!--</div>-->
+      <!--</footer>-->
     </div>
     <div id="mobile">
       <main>
@@ -146,53 +146,6 @@
           </div>
           </flickity>
       </main>
-      <footer>
-        <div class="foot_wrapper_m">
-          <div class="foot_first_m">
-            <div class="foot_first_m_name"><p>Upwards!</p></div>
-            <div class="foot_first_m_body">
-              <p>Website made by programmers,</p>
-              <p>for programmers</p>
-              <p>Explore.Study.Polish</p>
-              </div>
-
-          </div>
-          <div class="explore_m">
-            <div class="explore_m_name"><p>Explore</p></div>
-            <div class="explore_m_body">
-              <a href="#">Forum</a>
-              <a href="#">Learning</a>
-              <a href="#">Events</a>
-              <a href="#">Success</a>
-              <a href="#">Dictionary</a>
-              <a href="#">Builder</a>
-            </div>
-
-          </div>
-          <div class="follow_m">
-            <div class="follow_m_name"><p>Follow</p></div>
-            <div class="follow_m_body">
-              <a href="#">Twitter</a>
-              <a href="#">Telegram</a>
-              <a href="#">Facebook</a>
-            </div>
-
-          </div>
-            <div class="subscribe_m">
-              <div class="subscribe_m_name"><p>Subscribe </p></div>
-              <div class="subscribe_m_body">
-                <p>Subscribe to get</p>
-                <p>weekly releases</p>
-                <p>on your email</p>
-                <br>
-                <input type="text" id="inp_m" placeholder="Enter your email:">
-                <br>
-                <button class="sub_m">SUBSCRIBE</button>
-              </div>
-
-          </div>
-        </div>
-      </footer>
     </div>
   </div>
 </template>
@@ -484,105 +437,8 @@
     flickity{
       width: 100%;
     }
-    .foot_first_m{
-      width: 100%;
-      color: white;
-      background-color:gainsboro;
 
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-    }
-    .foot_first_m div:nth-child(2) {
-      margin-top: 50px;
-      font-weight: 300;
-      font-family: 'Roboto', sans-serif;
-      font-size: 26px;
-    }
-    .explore_m{
-      background-color: gray;
-      height: 100%;
-      width: 100%;
-      color: white;
-      text-align: center;
 
-    }
-    .explore_m_name{
-      font-weight: 700;
-      font-family: 'Comfortaa', sans-serif;
-      font-size: 40px;
-    }
-    .explore_m div a:nth-child(6){
-        padding-bottom: 10px;
-      }
-     .explore_m a{
-      color: white;
-      font-weight: 300;
-      font-family: 'Roboto', sans-serif;
-      font-size: 26px;
-      display: block;
-      margin-bottom: 30px;
-    }
-    .follow_m{
-      background-color: black;
-      width: 100%;
-      color: white;
-      text-align: center;
-      height: 150%;
-    }
-    .follow_m a{
-      color: white;
-      font-weight: 300;
-      font-family: 'Roboto', sans-serif;
-      font-size: 26px;
-      display: block;
-      margin-bottom: 30px;
-    }
-    .follow_m_name{
-      font-weight: 700;
-      font-family: 'Comfortaa', sans-serif;
-      font-size: 40px;
-
-    }
-    .subscribe_m{
-      color: white;
-      background-color:indianred;
-      width: 100%;
-      text-align: center;
-      height: 150%;
-      font-weight: 300;
-      font-family: 'Roboto', sans-serif;
-      font-size: 23px;
-    }
-    .subscribe_m_name{
-      font-weight: 700;
-      font-family: 'Comfortaa', sans-serif;
-      font-size: 40px;
-      margin-bottom: 40px;
-    }
-    .subscribe_m input{
-      opacity: 0.8;
-      background-color: #FFFFFF;
-      text-decoration: none;
-      border: none;
-      border-radius: 25px;
-      height: 45px;
-      width: 269px;
-
-    }
-    .subscribe_m button{
-
-      color: white;
-      margin-top: 30px;
-      margin-bottom: 20px;
-      opacity: 0.8;
-      background-color: #23699F;
-      text-decoration: none;
-      border: none;
-      border-radius: 25px;
-      height: 45px;
-      width: 152px;
-    }
     .carousel-cell{
       background-color: #F3F3F3;
       height: 500px;
@@ -623,9 +479,9 @@
     /*flex-direction: column;*/
     /*}*/
 
-    .topnav_m p{
-      font-size: 80px;
-    }
+    /*.topnav_m p{*/
+      /*font-size: 80px;*/
+    /*}*/
 
 
     .midnav_m a{
@@ -634,27 +490,6 @@
       margin-bottom: 20px;
     }
 
-    .foot_first_m_body{
-      margin-top: 40px;
-      margin-bottom: 40px;
-      display: none;
-    }
-    .foot_first_m_name{
-      font-weight: 700;
-      font-family: 'Comfortaa', sans-serif;
-      font-size: 51px;
-    }
-    .foot_first_m_body p:nth-child(3){
-      margin-top: 30px;
-    }
-    .explore_m_body{
-      display: none;
-      margin-top: 40px;
-    }
-    .follow_m_body{
-      margin-top: 40px;
-      display: none;
-    }
   }
 
 
