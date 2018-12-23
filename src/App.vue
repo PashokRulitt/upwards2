@@ -8,9 +8,8 @@
         <a href="#">events</a>
         <a href="#">success story</a>
         <a href="#">dictionary</a>
-        <a href="#">team builder</a>
-        <button @click="show_topnav=!show_topnav" class="nav_button">&#9776;</button>
-        <a href="/login">login</a>
+        <a  href="#">team builder</a>
+        <a id="last_topnav" href="/login">login</a>
       </div>
     </div>
     <div v-show="show_topnav" class="midnav">
@@ -103,6 +102,14 @@
     border: none;
     background-color: #F3F3F3;
     display: none;
+  }
+  #last_topnav{
+    background-color: indianred;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    margin-left: 40px;
   }
   #upwards{
     font-family:  'Comfortaa', cursive;
