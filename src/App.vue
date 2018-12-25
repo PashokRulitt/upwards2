@@ -10,6 +10,7 @@
         <a href="#">dictionary</a>
         <a  href="#">team builder</a>
         <a id="last_topnav" href="/login">login</a>
+        <a href="#" class="nav_button" @click="show_topnav=!show_topnav">&#9776;</a>
       </div>
     </div>
     <div v-show="show_topnav" class="midnav">
@@ -85,9 +86,6 @@
   }
 </script>
 <style>
-  .nav_button{
-    background-image: url("/src/assets/login.jpg");
-  }
   .midnav{
     display: flex;
     flex-direction: column;
@@ -97,7 +95,8 @@
     border-top: 5px solid black;
     /*float: left;*/
   }
-  .nav_button{
+  .topnav .nav_button{
+    border-bottom: none;
     text-decoration: none;
     border: none;
     background-color: #F3F3F3;
@@ -177,17 +176,156 @@
     display: none;
   }
   @media screen and (max-width: 1023px){
+    .foot_wrapper_m{
+      margin-right: 16%;
+    }
     .nav_button{
-      font-size: 60px;
       display: block;
+    }
+    #header__logo{
+      margin-top: 5%;
+    }
+    .topnav .nav_button{
+      font-size: 40px;
+      display: block;
+    }
+    #last_topnav{
+      display: none;
+    }
+    #upwards{
+      font-size: 39px;
+    }
+    #slesh{
+      font-size: 39px;
+    }
+    #com{
+      font-size: 30px;
+    }
+    #home{
+      font-size: 30px;
+    }
+    #mobile .slogan{
+      margin-left: 10%;
+      font-size: 35px;
+      margin-top: 5%;
     }
     .topnav a{
       display: none;
+      margin-left: 0;
     }
     .topnav{
-      margin-left: -4%;
-      /*margin-right: 0;*/
+      margin-left: 30%;
+      margin-top: 0;
+      border: none;
+    }
+  }
+  @media screen and  (max-width: 900px){
+    #mobile .slogan{
+      font-size: 30px;
+      margin-left: 15%;
+    }
+    #upwards{
+      font-size: 30px;
+    }
+    #slesh{
+      font-size: 30px;
+    }
+    #com{
+      font-size: 25px;
+    }
+    #home{
+      font-size: 25px;
+    }
+    .topnav{
+      margin-left: 35%;
+    }
+    #mobile .slogan{
       margin-top: 5%;
+    }
+  }
+  @media screen and (max-width: 800px){
+    .topnav{
+      margin-left: 30%;
+    }
+    #mobile .slogan{
+      margin-top: 5%;
+    }
+  }
+  @media screen and (max-width: 750px){
+    .topnav{
+      margin-left: 25%;
+    }
+    #mobile .slogan{
+      font-size: 23px;
+      margin-top: 5%;
+    }
+  }
+  @media screen and (max-width: 700px){
+    .topnav{
+      margin-left: 17%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .topnav{
+      margin-left: 15%;
+    }
+    #mobile .slogan{
+      font-size: 20px;
+      margin-top: 3%;
+    }
+  }
+  @media screen and (max-width: 550px){
+    .topnav{
+      margin-left: 10%;
+    }
+  }
+  @media screen and (max-width: 500px){
+    .topnav{
+      margin-left: 3%;
+    }
+    #mobile .slogan{
+      font-size: 17px;
+    }
+  }
+  @media screen and (max-width: 470px){
+    #header__logo{
+     margin-left: 0;
+   }
+    #mobile .slogan{
+      font-size: 17px;
+    }
+  }
+  @media screen and (max-width: 425px){
+    .topnav .nav_button{
+      font-size: 25px;
+    }
+    #upwards{
+      font-size: 25px;
+    }
+    #slesh{
+      font-size: 25px;
+    }
+    #com{
+      font-size: 20px;
+    }
+    #home{
+      font-size: 20px;
+    }
+    #header__logo{
+      margin-left: 0;
+    }
+    #mobile .slogan{
+      font-size: 15px;
+    }
+  }
+  @media screen and (max-width: 370px){
+    #mobile .slogan{
+      font-size: 12px;
+    }
+  }
+  @media screen and (max-width: 350px){
+    .topnav{
+      margin-left: 0;
     }
   }
   @media screen and (min-width: 1024px){
@@ -196,6 +334,7 @@
     }
     .topnav{
       margin-left: 6%;
+      margin-top: 4%;
     }
     #header__logo{
       margin-left: 0;
@@ -212,6 +351,7 @@
       .topnav{
         margin-left: 8%;
         margin-right: 2%;
+        margin-top: 5%;
       }
       #upwards{
         /*font-family:  'Comfortaa', cursive;*/
