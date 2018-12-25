@@ -439,15 +439,17 @@
       width: 100%;
     }
   }
+
     .carousel-cell{
       background-color: #F3F3F3;
       height: 500px;
-      width: 40%;
+      width: 101%;
       margin: 0px 15px;
     }
     .carousel-cell div{
       margin-top: 30px;
-      margin-left: 25px;
+      margin-left: 10%;
+      margin-right: 10%;
       text-align: center;
     }
     .carousel-cell div p:nth-child(2){
@@ -471,6 +473,23 @@
     #desktop{
       display: none;
     }
+  @media screen and (min-width: 532px) {
+    .carousel-cell {
+      width: 80%;
+    }
+  }
+  @media screen and (min-width: 816px) {
+    .carousel-cell {
+      width: 65%;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+    .carousel-cell div {
+
+      margin-left: 20%;
+      margin-right: 20%;
+    }
+  }
 
     /*!*nav{*!*/
 

@@ -177,9 +177,9 @@
     display: none;
   }
   @media screen and (max-width: 1023px){
-    .foot_wrapper_m{
-      margin-right: 16%;
-    }
+    /*.foot_wrapper_m{*/
+      /*margin-right: 16%;*/
+    /*}*/
     .nav_button{
       display: block;
     }
@@ -340,7 +340,8 @@
       margin-top: 4%;
     }
     #header__logo{
-      margin-left: 0;
+      margin-top: 5%;
+      margin-left: 15px;
     }
     #desktop .slogan{
       margin-left: 20%;
