@@ -431,14 +431,14 @@
   }
 
   @media screen and (max-width: 1024px) {
-    body{
+    body {
       overflow-x: hidden;
     }
-    flickity{
+
+    flickity {
       width: 100%;
     }
-
-
+  }
     .carousel-cell{
       background-color: #F3F3F3;
       height: 500px;
@@ -472,25 +472,25 @@
       display: none;
     }
 
-    /*nav{*/
+    /*!*nav{*!*/
 
-    /**/
-    /*display: flex;*/
-    /*flex-direction: column;*/
+    /*!**!*/
+    /*!*display: flex;*!*/
+    /*!*flex-direction: column;*!*/
+    /*!*}*!*/
+
+    /*!*.topnav_m p{*!*/
+      /*!*font-size: 80px;*!*/
+    /*!*}*!*/
+
+
+    /*.midnav_m a{*/
+      /*margin-top: 10px;*/
+      /*margin-left: 5%;*/
+      /*margin-bottom: 20px;*/
     /*}*/
 
-    /*.topnav_m p{*/
-      /*font-size: 80px;*/
-    /*}*/
-
-
-    .midnav_m a{
-      margin-top: 10px;
-      margin-left: 5%;
-      margin-bottom: 20px;
-    }
-
-  }
+  /*}*/
 
 
 

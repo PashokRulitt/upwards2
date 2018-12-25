@@ -8,8 +8,9 @@
         <a href="#">events</a>
         <a href="#">success story</a>
         <a href="#">dictionary</a>
-        <a  href="#">team builder</a>
-        <a id="last_topnav" href="/login">login</a>
+        <a href="#">team builder</a>
+        <a href="#" class="nav_button" @click="show_topnav=!show_topnav"></a>
+        <a id="last_topnav" href="/login" >login</a>
       </div>
     </div>
     <div v-show="show_topnav" class="midnav">
@@ -85,9 +86,7 @@
   }
 </script>
 <style>
-  .nav_button{
-    background-image: url("/src/assets/login.jpg");
-  }
+
   .midnav{
     display: flex;
     flex-direction: column;
@@ -176,9 +175,12 @@
   .topnav .icon{
     display: none;
   }
+  @media screen and (min-width: 320px){
+
+  }
   @media screen and (max-width: 1023px){
-    .nav_button{
-      font-size: 60px;
+    .topnav .nav_button{
+      font-size: 40px;
       display: block;
     }
     .topnav a{
@@ -192,7 +194,7 @@
   }
   @media screen and (min-width: 1024px){
     .topnav a{
-      margin-left: -2%;
+      /*margin-left: -2%;*/
     }
     .topnav{
       margin-left: 6%;
@@ -413,50 +415,6 @@
     margin-top: 40px;
   }
 
-  /*@media screen and (min-width: 1094px){*/
-    /*nav{*/
-      /*margin-left: 10%*/
-    /*}*/
-  /*}*/
-  /*@media screen and (min-width: 1066px) {*/
-    /*nav {*/
-      /*margin-left: 8%*/
-    /*}*/
-  /*}*/
-  /*@media screen and (min-width: 1130px) {*/
-    /*nav {*/
-      /*margin-left: 12%*/
-    /*}*/
-  /*}*/
-  /*@media screen and (max-width: 1297px) {*/
-    /*.slogan {*/
-      /*font-size: 40px;*/
-    /*}*/
-  /*}*/
-  /*@media screen and (min-width: 1298px) {*/
-    /*nav {*/
-      /*margin-left: 15%*/
-    /*}*/
-  /*}*/
-  /*@media screen and (min-width: 1400px) {*/
-    /*nav {*/
-      /*margin-left: 20%*/
-    /*}*/
-  /*}*/
-  /*@media screen and (min-width: 1600px) {*/
-    /*nav {*/
-      /*margin-left: 25%*/
-    /*}*/
-  /*}*/
-  /*@media screen and (min-width: 1700px) {*/
-    /*nav {*/
-      /*margin-left: 30%*/
-    /*}*/
-  /*}*/
-  /*@media screen and (min-width: 1900px) {*/
-    /*nav {*/
-      /*margin-left: 35%*/
-    /*}*/
-  /*}*/
+
 
 </style>
