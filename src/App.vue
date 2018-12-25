@@ -176,7 +176,6 @@
   .topnav .icon{
     display: none;
   }
-
   @media screen and (max-width: 1023px){
     .nav_button{
       font-size: 60px;
@@ -186,15 +185,33 @@
       display: none;
     }
     .topnav{
-      margin-left: 50%;
+      margin-left: -4%;
       /*margin-right: 0;*/
-      margin-top:7px;
+      margin-top: 5%;
+    }
+  }
+  @media screen and (min-width: 1024px){
+    .topnav a{
+      margin-left: -2%;
+    }
+    .topnav{
+      margin-left: 6%;
+    }
+    #header__logo{
+      margin-left: 0;
+    }
+    #desktop .slogan{
+      margin-left: 20%;
+    }
+    #upwards{
+      font-size: 33px ;
     }
   }
 
     @media screen and (min-width: 1100px){
       .topnav{
-        margin-left: 9%
+        margin-left: 8%;
+        margin-right: 2%;
       }
       #upwards{
         /*font-family:  'Comfortaa', cursive;*/
@@ -202,24 +219,26 @@
       }
       #slesh{
         font-size: 49px;
+        margin-left: 0;
       }
       #home{
         font-size: 24px;
       }
       #com{
         font-size: 28px;
+        margin-right: 0;
       }
     }
     @media screen and (min-width: 1200px){
       .topnav{
-        margin-left: 14%
+        margin-left: 10%
       }
       #upwards{
         /*font-family:  'Comfortaa', cursive;*/
         font-size: 52px;
       }
       #slesh{
-        font-size: 52px;
+        font-size: 42px;
       }
       #home{
         font-size: 26px;
@@ -227,6 +246,50 @@
       #com{
         font-size: 30px;
       }
+      #desktop .slogan{
+        margin-left: 25%;
+      }
+  }
+    @media screen and (min-width: 1300px) {
+      #myTopnav{
+        margin-left: 20%;
+      }
+      .slogan{
+        margin-left: 25%;
+      }
+  }
+  @media screen and (min-width: 1400px){
+    #desktop .slogan{
+      margin-left: 30%;
+    }
+  }
+  @media screen and (min-width: 1500px){
+    #myTopnav{
+      margin-left: 31%;
+    }
+  }
+  @media screen and (min-width: 1600px){
+    #myTopnav{
+      margin-left: 36%;
+    }
+  }
+  @media screen and (min-width: 1700px){
+    #myTopnav{
+      margin-left: 40%;
+    }
+  }
+  @media screen and (min-width: 1800px){
+    #myTopnav{
+      margin-left: 43%;
+    }
+  }
+  @media screen and (min-width: 1900px){
+    #myTopnav{
+      margin-left: 46%;
+    }
+    #com{
+      font-size: 29px;
+    }
   }
   .foot_first_m{
     width: 100%;
