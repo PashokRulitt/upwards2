@@ -324,8 +324,6 @@
       font-size: 12px;
     }
   }
-
-
   @media screen and (max-width: 350px){
     .topnav{
       margin-left: 0;
@@ -350,7 +348,6 @@
       font-size: 33px ;
     }
   }
-
   @media screen and (min-width: 1100px){
     .topnav{
       margin-left: 8%;
@@ -402,11 +399,11 @@
       margin-left: 25%;
     }
   }
-  @media screen and (min-width: 1400px){
-    #desktop .slogan{
-      margin-left: 30%;
-    }
-  }
+  /*@media screen and (min-width: 1400px){*/
+    /*#desktop .slogan{*/
+      /*margin-left: 30%;*/
+    /*}*/
+  /*}*/
   @media screen and (min-width: 1500px){
     #myTopnav{
       margin-left: 31%;

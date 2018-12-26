@@ -191,7 +191,6 @@
     padding: 10px 30px;
     align-self: center;
   }
-
   /*MAin info blocks start*/
   .wrapper1{
     text-align: center;
@@ -238,7 +237,6 @@
     font-weight: 300;
     font-size: 22px;
   }
-
   .self_progress{
     /*margin-right: 1%;*/
     flex-direction: column;
@@ -313,36 +311,18 @@
     margin-top: 100px;
     margin-left: 30%;
   }
-
   .programmers{
     background-color: #7CDAC1;
   }
   .programmers2{
     background-color: #F2D083;
   }
-
-  /*end*/
-  main{
+   /*end*/
+   main{
     margin-bottom: 111px;
   }
-  /*footer*/
-  footer{
-  }
-
-  .foot_wrapper{
-    padding-bottom: 70px;
-    width: 100%;
-    color: white;
-    background-color: black;
-    font-weight: 300;
-    font-family: 'Roboto', sans-serif;
-    font-size: 26px;
-    display: flex;
-
-  }
-  .foot_first , .explore , .follow , .subscribe{
-    margin-top: 97px;
-    margin-left: 5%;
+   /*footer*/
+   footer{
   }
   .foot_first p:nth-child(1) {
     font-weight: 700;
@@ -383,29 +363,17 @@
     display: block;
     margin-bottom: 30px;
   }
-  .follow{
-     margin-left: 6%;
-   }
   .follow p:nth-child(1) {
     margin-bottom: 66px;
     font-weight: 500;
     font-family: 'Roboto', sans-serif;
     font-size: 26px;
   }
-  .explore{
-    margin-left: 5%;
-  }
-
   .subscribe p:nth-child(1){
     margin-bottom: 66px;
     font-weight: 500;
     font-family: 'Roboto', sans-serif;
     font-size: 26px;
-  }
-  .subscribe{
-    text-align: left;
-    margin-left: 10%;
-    margin-right: 5px;
   }
   .subscribe input{
     opacity: 0.8;
@@ -430,7 +398,7 @@
     width: 152px;
   }
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1023px) {
     body {
       overflow-x: hidden;
     }
@@ -438,131 +406,45 @@
     flickity {
       width: 100%;
     }
-  }
 
-    .carousel-cell{
+    .carousel-cell {
       background-color: #F3F3F3;
       height: 500px;
       width: 101%;
       margin: 0px 15px;
     }
-    .carousel-cell div{
+
+    .carousel-cell div {
       margin-top: 30px;
       margin-left: 10%;
       margin-right: 10%;
       text-align: center;
     }
-    .carousel-cell div p:nth-child(2){
+
+    .carousel-cell div p:nth-child(2) {
       font-family: 'Comfortaa', cursive;
       font-weight: bold;
       font-size: 26px;
       margin-top: 20px;
       text-align: center;
     }
-    .carousel-cell div p:nth-child(3){
+
+    .carousel-cell div p:nth-child(3) {
       font-family: 'Roboto', sans-serif;
       font-weight: 300;
       font-size: 18px;
-      margin-bottom: 20px ;
+      margin-bottom: 20px;
       margin-top: 20px;
       text-align: center;
     }
-    #mobile{
+
+    #mobile {
       display: block;
     }
-    #desktop{
+
+    #desktop {
       display: none;
     }
-  @media screen and (min-width: 532px) {
-    .carousel-cell {
-      width: 80%;
-    }
-  }
-  @media screen and (min-width: 816px) {
-    .carousel-cell {
-      width: 65%;
-      margin-left: 10%;
-      margin-right: 10%;
-    }
-    .carousel-cell div {
-
-      margin-left: 20%;
-      margin-right: 20%;
-    }
   }
 
-    /*!*nav{*!*/
-
-    /*!**!*/
-    /*!*display: flex;*!*/
-    /*!*flex-direction: column;*!*/
-    /*!*}*!*/
-
-    /*!*.topnav_m p{*!*/
-      /*!*font-size: 80px;*!*/
-    /*!*}*!*/
-
-
-    /*.midnav_m a{*/
-      /*margin-top: 10px;*/
-      /*margin-left: 5%;*/
-      /*margin-bottom: 20px;*/
-    /*}*/
-
-  /*}*/
-
-
-
-
-
-
-
-  /*MObile*/
-
-
-
-
-
-
-  /*@media screen and (max-width: 1024px){*/
-  /*.topnav a{*/
-  /*display: none;*/
-  /*}*/
-  /*.topnav a.icon{*/
-  /*float:right;*/
-  /*display: block;*/
-  /*margin-top: -17px;*/
-  /*}*/
-
-  /*nav{*/
-  /*width: 100%*/
-  /*}*/
-  /*.topnav.responsive{*/
-  /*position: relative;*/
-  /*top: 50px;*/
-  /*left: -200px;*/
-  /*}*/
-  /*header .topnav.responsive{*/
-  /*height: 340px;*/
-  /*}*/
-  /*.topnav .responsive a .icon{*/
-  /*position: absolute;*/
-  /*top: -50px;*/
-  /*right: -200px;*/
-  /*}*/
-
-  /*.topnav.responsive a{*/
-  /*float: none;*/
-  /*display: block;*/
-  /*text-align: left;*/
-  /*}*/
-  /*}*/
-
-  /*.topnav_mobile{*/
-  /*margin-left: 300px;*/
-  /*float: right;*/
-  /*}*/
-  /*.midnav{*/
-  /*!*display: none;*!*/
-  /*}*/
 </style>
