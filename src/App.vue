@@ -85,17 +85,12 @@
   }
 </script>
 <style>
-  .nav_button{
-    background-image: url("/src/assets/login.jpg");
-  }
   .midnav{
     display: flex;
     flex-direction: column;
     margin-top: 20px;
-
     border: 1px solid black;
     border-top: 5px solid black;
-    /*float: left;*/
   }
   .nav_button{
     text-decoration: none;
@@ -146,16 +141,12 @@
     width: 100%;
     display: flex;
   }
-  /*header start*/
   #header__logo{
     font-weight: bold;
     cursor: pointer;
     margin-top: 27px;
     margin-left: 38px;
   }
-  /*nav{*/
-    /*margin-top: 56px;*/
-  /*}*/
   .topnav {
     text-align: center;
     float: right;
@@ -173,10 +164,6 @@
   .topnav a:hover{
     border-bottom: 3px solid #fcac45;
   }
-  .topnav .icon{
-    display: none;
-  }
-
   @media screen and (max-width: 1023px){
     .nav_button{
       font-size: 60px;
@@ -191,8 +178,7 @@
       margin-top:7px;
     }
   }
-
-    @media screen and (min-width: 1100px){
+  @media screen and (min-width: 1100px){
       .topnav{
         margin-left: 9%
       }
@@ -210,12 +196,11 @@
         font-size: 28px;
       }
     }
-    @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px){
       .topnav{
         margin-left: 14%
       }
       #upwards{
-        /*font-family:  'Comfortaa', cursive;*/
         font-size: 52px;
       }
       #slesh{
@@ -255,7 +240,6 @@
     font-family: 'Roboto', sans-serif;
     font-size: 26px;
   }
-
   .explore_m div a:nth-child(6){
     padding-bottom: 10px;
   }
@@ -307,7 +291,6 @@
   .subscribe_m_body{
     margin-top: 40px;
   }
-
   .subscribe_m input{
     opacity: 0.8;
     background-color: #FFFFFF;
@@ -349,51 +332,4 @@
   .follow_m_body{
     margin-top: 40px;
   }
-
-  /*@media screen and (min-width: 1094px){*/
-    /*nav{*/
-      /*margin-left: 10%*/
-    /*}*/
-  /*}*/
-  /*@media screen and (min-width: 1066px) {*/
-    /*nav {*/
-      /*margin-left: 8%*/
-    /*}*/
-  /*}*/
-  /*@media screen and (min-width: 1130px) {*/
-    /*nav {*/
-      /*margin-left: 12%*/
-    /*}*/
-  /*}*/
-  /*@media screen and (max-width: 1297px) {*/
-    /*.slogan {*/
-      /*font-size: 40px;*/
-    /*}*/
-  /*}*/
-  /*@media screen and (min-width: 1298px) {*/
-    /*nav {*/
-      /*margin-left: 15%*/
-    /*}*/
-  /*}*/
-  /*@media screen and (min-width: 1400px) {*/
-    /*nav {*/
-      /*margin-left: 20%*/
-    /*}*/
-  /*}*/
-  /*@media screen and (min-width: 1600px) {*/
-    /*nav {*/
-      /*margin-left: 25%*/
-    /*}*/
-  /*}*/
-  /*@media screen and (min-width: 1700px) {*/
-    /*nav {*/
-      /*margin-left: 30%*/
-    /*}*/
-  /*}*/
-  /*@media screen and (min-width: 1900px) {*/
-    /*nav {*/
-      /*margin-left: 35%*/
-    /*}*/
-  /*}*/
-
 </style>

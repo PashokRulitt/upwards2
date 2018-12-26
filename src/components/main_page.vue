@@ -48,46 +48,6 @@
         </div>
 
       </main>
-      <!--<footer>-->
-        <!--<div class="foot_wrapper">-->
-          <!--<div class="foot_first">-->
-            <!--<p>Upwards!</p>-->
-            <!--<p>Website made by programmers,</p>-->
-            <!--<p>for programmers</p>-->
-            <!--<p>Explore.Study.Polish</p>-->
-          <!--</div>-->
-          <!--<div class="explore">-->
-            <!--<p>Explore</p>-->
-
-
-            <!--<a href="#">Forum</a>-->
-            <!--<a href="#">Learning</a>-->
-            <!--<a href="#">Events</a>-->
-            <!--<a href="#">Success</a>-->
-            <!--<a href="#">Dictionary</a>-->
-            <!--<a href="#"><B></B>uilder</a>-->
-
-          <!--</div>-->
-          <!--<div class="follow">-->
-            <!--<p>Follow</p>-->
-            <!--<a href="#">Twitter</a>-->
-            <!--<a href="#">Telegram</a>-->
-            <!--<a href="#">Facebook</a>-->
-
-          <!--</div>-->
-          <!--<div class="subscribe">-->
-            <!--<p>Subscribe </p>-->
-            <!--<p>Subscribe to get</p>-->
-            <!--<p>weekly releases</p>-->
-            <!--<p>on your email</p>-->
-            <!--<br>-->
-            <!--<input type="text" id="inp" placeholder="Enter your email:">-->
-            <!--<br>-->
-            <!--<button class="sub">SUBSCRIBE</button>-->
-
-          <!--</div>-->
-        <!--</div>-->
-      <!--</footer>-->
     </div>
     <div id="mobile">
       <main>
@@ -182,7 +142,6 @@
     margin: 0px;
     padding: 0px;
   }
-  /*Learn More button*/
   .learn_more{
     color: white;
     border: none;
@@ -191,19 +150,15 @@
     padding: 10px 30px;
     align-self: center;
   }
-
-  /*MAin info blocks start*/
   .wrapper1{
     text-align: center;
     margin-top: 101px;
     margin-left: 2%;
-    /*margin-right: 2%;*/
     display: flex;
   }
   .wrapper2{
     text-align: center;
     margin-top: 51px;
-    /*margin-right: 2%;*/
     display: flex;
   }
   .stories{
@@ -238,9 +193,7 @@
     font-weight: 300;
     font-size: 22px;
   }
-
   .self_progress{
-    /*margin-right: 1%;*/
     flex-direction: column;
     font-family: 'Comfortaa', cursive;
     font-weight: bold;
@@ -303,9 +256,6 @@
     font-weight: 300;
     font-size: 22px;
   }
-  /*MAin info blocks end*/
-  /*Website made by programmers,
-  for programmers*/
   .slogan{
     font-family: 'Comfortaa', cursive;
     font-weight: 100;
@@ -313,123 +263,15 @@
     margin-top: 100px;
     margin-left: 30%;
   }
-
   .programmers{
     background-color: #7CDAC1;
   }
   .programmers2{
     background-color: #F2D083;
   }
-
-  /*end*/
-  main{
+   main{
     margin-bottom: 111px;
   }
-  /*footer*/
-  footer{
-  }
-
-  .foot_wrapper{
-    padding-bottom: 70px;
-    width: 100%;
-    color: white;
-    background-color: black;
-    font-weight: 300;
-    font-family: 'Roboto', sans-serif;
-    font-size: 26px;
-    display: flex;
-
-  }
-  .foot_first , .explore , .follow , .subscribe{
-    margin-top: 97px;
-    margin-left: 5%;
-  }
-  .foot_first p:nth-child(1) {
-    font-weight: 700;
-    font-family: 'Comfortaa', sans-serif;
-    font-size: 51px;
-  }
-  .foot_first p:nth-child(4) {
-    margin-top: 50px;
-    font-weight: 700;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-  }
-  .explore p{
-
-    margin-bottom: 35px;
-  }
-  .explore a{
-    color: white;
-    background-color: black;
-    font-weight: 300;
-    font-family: 'Roboto', sans-serif;
-    font-size: 26px;
-    display: block;
-    margin-bottom: 30px;
-  }
-  .explore p:nth-child(1){
-    font-weight: 500;
-    font-family: 'Roboto', sans-serif;
-    font-size: 26px;
-    margin-bottom: 66px;
-  }
-  .follow a{
-    color: white;
-    background-color: black;
-    font-weight: 300;
-    font-family: 'Roboto', sans-serif;
-    font-size: 26px;
-    display: block;
-    margin-bottom: 30px;
-  }
-  .follow{
-     margin-left: 6%;
-   }
-  .follow p:nth-child(1) {
-    margin-bottom: 66px;
-    font-weight: 500;
-    font-family: 'Roboto', sans-serif;
-    font-size: 26px;
-  }
-  .explore{
-    margin-left: 5%;
-  }
-
-  .subscribe p:nth-child(1){
-    margin-bottom: 66px;
-    font-weight: 500;
-    font-family: 'Roboto', sans-serif;
-    font-size: 26px;
-  }
-  .subscribe{
-    text-align: left;
-    margin-left: 10%;
-    margin-right: 5px;
-  }
-  .subscribe input{
-    opacity: 0.8;
-    background-color: #FFFFFF;
-    text-decoration: none;
-    border: none;
-    border-radius: 25px;
-    height: 45px;
-    width: 269px;
-
-  }
-  .subscribe button{
-    float: right;
-    color: white;
-    margin-top: 30px;
-    opacity: 0.8;
-    background-color: #23699F;
-    text-decoration: none;
-    border: none;
-    border-radius: 25px;
-    height: 45px;
-    width: 152px;
-  }
-
   @media screen and (max-width: 1024px) {
     body{
       overflow-x: hidden;
@@ -437,8 +279,6 @@
     flickity{
       width: 100%;
     }
-
-
     .carousel-cell{
       background-color: #F3F3F3;
       height: 500px;
@@ -472,78 +312,27 @@
       display: none;
     }
 
-    /*nav{*/
-
-    /**/
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*}*/
-
-    /*.topnav_m p{*/
-      /*font-size: 80px;*/
-    /*}*/
-
-
     .midnav_m a{
       margin-top: 10px;
       margin-left: 5%;
       margin-bottom: 20px;
     }
-
   }
+  @media screen and (min-width: 532px) {
+    .carousel-cell {
+      width: 80%;
+    }
+  }
+  @media screen and (min-width: 816px) {
+    .carousel-cell {
+      width: 65%;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+    .carousel-cell div {
 
-
-
-
-
-
-
-  /*MObile*/
-
-
-
-
-
-
-  /*@media screen and (max-width: 1024px){*/
-  /*.topnav a{*/
-  /*display: none;*/
-  /*}*/
-  /*.topnav a.icon{*/
-  /*float:right;*/
-  /*display: block;*/
-  /*margin-top: -17px;*/
-  /*}*/
-
-  /*nav{*/
-  /*width: 100%*/
-  /*}*/
-  /*.topnav.responsive{*/
-  /*position: relative;*/
-  /*top: 50px;*/
-  /*left: -200px;*/
-  /*}*/
-  /*header .topnav.responsive{*/
-  /*height: 340px;*/
-  /*}*/
-  /*.topnav .responsive a .icon{*/
-  /*position: absolute;*/
-  /*top: -50px;*/
-  /*right: -200px;*/
-  /*}*/
-
-  /*.topnav.responsive a{*/
-  /*float: none;*/
-  /*display: block;*/
-  /*text-align: left;*/
-  /*}*/
-  /*}*/
-
-  /*.topnav_mobile{*/
-  /*margin-left: 300px;*/
-  /*float: right;*/
-  /*}*/
-  /*.midnav{*/
-  /*!*display: none;*!*/
-  /*}*/
+      margin-left: 20%;
+      margin-right: 20%;
+    }
+  }
 </style>
