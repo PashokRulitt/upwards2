@@ -1,11 +1,10 @@
 <template>
-  <div>
+    <main>
+    <div class="slogan">
+      <p>Website made by <span class="programmers">programmers</span>,</p>
+      <p>for <span class="programmers2" >programmers</span></p>
+    </div>
     <div id="desktop">
-      <main>
-        <div class="slogan">
-          <p>Website made by <span class="programmers">programmers</span>,</p>
-          <p>for <span class="programmers2" >programmers</span></p>
-        </div>
         <div class="wrapper1">
           <div class="stories">
             <img height="192px" width="200px" src="../assets/success.png" alt=""><!--200x192-->
@@ -46,55 +45,8 @@
             <button class="learn_more">Learn more:</button>
           </div>
         </div>
-
-      </main>
-      <!--<footer>-->
-        <!--<div class="foot_wrapper">-->
-          <!--<div class="foot_first">-->
-            <!--<p>Upwards!</p>-->
-            <!--<p>Website made by programmers,</p>-->
-            <!--<p>for programmers</p>-->
-            <!--<p>Explore.Study.Polish</p>-->
-          <!--</div>-->
-          <!--<div class="explore">-->
-            <!--<p>Explore</p>-->
-
-
-            <!--<a href="#">Forum</a>-->
-            <!--<a href="#">Learning</a>-->
-            <!--<a href="#">Events</a>-->
-            <!--<a href="#">Success</a>-->
-            <!--<a href="#">Dictionary</a>-->
-            <!--<a href="#"><B></B>uilder</a>-->
-
-          <!--</div>-->
-          <!--<div class="follow">-->
-            <!--<p>Follow</p>-->
-            <!--<a href="#">Twitter</a>-->
-            <!--<a href="#">Telegram</a>-->
-            <!--<a href="#">Facebook</a>-->
-
-          <!--</div>-->
-          <!--<div class="subscribe">-->
-            <!--<p>Subscribe </p>-->
-            <!--<p>Subscribe to get</p>-->
-            <!--<p>weekly releases</p>-->
-            <!--<p>on your email</p>-->
-            <!--<br>-->
-            <!--<input type="text" id="inp" placeholder="Enter your email:">-->
-            <!--<br>-->
-            <!--<button class="sub">SUBSCRIBE</button>-->
-
-          <!--</div>-->
-        <!--</div>-->
-      <!--</footer>-->
     </div>
     <div id="mobile">
-      <main>
-        <div class="slogan">
-          <p>Website made by <span class="programmers">programmers</span>,</p>
-          <p>for <span class="programmers2" >programmers</span></p>
-        </div>
         <flickity ref="flickity" :options="flickityOptions">
           <div class="carousel-cell" >
             <div>
@@ -145,9 +97,8 @@
             </div>
           </div>
           </flickity>
-      </main>
     </div>
-  </div>
+    </main>
 </template>
 
 
@@ -175,12 +126,16 @@
 </script>
 
 <style>
-  #mobile{
-    display: none;
-  }
+
   *{
     margin: 0px;
     padding: 0px;
+  }
+  #mobile{
+     display: none;
+   }
+  #desktop{
+    display: block;
   }
   /*Learn More button*/
   .learn_more{
@@ -321,83 +276,6 @@
    main{
     margin-bottom: 111px;
   }
-   /*footer*/
-   footer{
-  }
-  .foot_first p:nth-child(1) {
-    font-weight: 700;
-    font-family: 'Comfortaa', sans-serif;
-    font-size: 51px;
-  }
-  .foot_first p:nth-child(4) {
-    margin-top: 50px;
-    font-weight: 700;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-  }
-  .explore p{
-
-    margin-bottom: 35px;
-  }
-  .explore a{
-    color: white;
-    background-color: black;
-    font-weight: 300;
-    font-family: 'Roboto', sans-serif;
-    font-size: 26px;
-    display: block;
-    margin-bottom: 30px;
-  }
-  .explore p:nth-child(1){
-    font-weight: 500;
-    font-family: 'Roboto', sans-serif;
-    font-size: 26px;
-    margin-bottom: 66px;
-  }
-  .follow a{
-    color: white;
-    background-color: black;
-    font-weight: 300;
-    font-family: 'Roboto', sans-serif;
-    font-size: 26px;
-    display: block;
-    margin-bottom: 30px;
-  }
-  .follow p:nth-child(1) {
-    margin-bottom: 66px;
-    font-weight: 500;
-    font-family: 'Roboto', sans-serif;
-    font-size: 26px;
-  }
-  .subscribe p:nth-child(1){
-    margin-bottom: 66px;
-    font-weight: 500;
-    font-family: 'Roboto', sans-serif;
-    font-size: 26px;
-  }
-  .subscribe input{
-    opacity: 0.8;
-    background-color: #FFFFFF;
-    text-decoration: none;
-    border: none;
-    border-radius: 25px;
-    height: 45px;
-    width: 269px;
-
-  }
-  .subscribe button{
-    float: right;
-    color: white;
-    margin-top: 30px;
-    opacity: 0.8;
-    background-color: #23699F;
-    text-decoration: none;
-    border: none;
-    border-radius: 25px;
-    height: 45px;
-    width: 152px;
-  }
-
   @media screen and (max-width: 1023px) {
     body {
       overflow-x: hidden;
@@ -437,14 +315,12 @@
       margin-top: 20px;
       text-align: center;
     }
-
-    #mobile {
-      display: block;
-    }
-
-    #desktop {
-      display: none;
-    }
+    /*#desktop {*/
+      /*display: none;*/
+    /*}*/
+    /*#mobile {*/
+       /*display: block;*/
+     /*}*/
   }
 
 </style>

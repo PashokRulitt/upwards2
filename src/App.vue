@@ -96,10 +96,13 @@
     border-top: 5px solid black;
     /*float: left;*/
   }
+  .nav_button{
+    display: none;
+  }
+  
   .topnav .nav_button{
     border-bottom: none;
     text-decoration: none;
-    border: none;
     background-color: #F3F3F3;
     display: none;
   }
@@ -173,13 +176,11 @@
   .topnav a:hover{
     border-bottom: 3px solid #fcac45;
   }
-  .topnav .icon{
-    display: none;
-  }
+  /*.topnav .icon{*/
+    /*display: none;*/
+  /*}*/
   @media screen and (max-width: 1023px){
-    /*.foot_wrapper_m{*/
-      /*margin-right: 16%;*/
-    /*}*/
+
     .nav_button{
       display: block;
     }
@@ -205,11 +206,11 @@
     #home{
       font-size: 30px;
     }
-    #mobile .slogan{
-      margin-left: 10%;
-      font-size: 35px;
-      margin-top: 5%;
-    }
+    /*#mobile .slogan{*/
+    /*margin-left: 10%;*/
+    /*font-size: 35px;*/
+    /*margin-top: 5%;*/
+    /*}*/
     .topnav a{
       display: none;
       margin-left: 0;
@@ -221,10 +222,10 @@
     }
   }
   @media screen and  (max-width: 900px){
-    #mobile .slogan{
-      font-size: 30px;
-      margin-left: 15%;
-    }
+    /*#mobile .slogan{*/
+      /*font-size: 30px;*/
+      /*margin-left: 15%;*/
+    /*}*/
     #upwards{
       font-size: 30px;
     }
@@ -240,9 +241,9 @@
     .topnav{
       margin-left: 35%;
     }
-    #mobile .slogan{
-      margin-top: 5%;
-    }
+    /*#mobile .slogan{*/
+      /*margin-top: 5%;*/
+    /*}*/
   }
   @media screen and (max-width: 800px){
     .topnav{
@@ -256,10 +257,10 @@
     .topnav{
       margin-left: 25%;
     }
-    #mobile .slogan{
-      font-size: 23px;
-      margin-top: 5%;
-    }
+    /*#mobile .slogan{*/
+      /*font-size: 23px;*/
+      /*margin-top: 5%;*/
+    /*}*/
   }
   @media screen and (max-width: 700px){
     .topnav{
@@ -270,10 +271,10 @@
     .topnav{
       margin-left: 15%;
     }
-    #mobile .slogan{
-      font-size: 20px;
-      margin-top: 3%;
-    }
+    /*#mobile .slogan{*/
+      /*font-size: 20px;*/
+      /*margin-top: 3%;*/
+    /*}*/
   }
   @media screen and (max-width: 550px){
     .topnav{
@@ -284,17 +285,17 @@
     .topnav{
       margin-left: 3%;
     }
-    #mobile .slogan{
-      font-size: 17px;
-    }
+    /*#mobile .slogan{*/
+      /*font-size: 17px;*/
+    /*}*/
   }
   @media screen and (max-width: 470px){
     #header__logo{
       margin-left: 0;
     }
-    #mobile .slogan{
-      font-size: 17px;
-    }
+    /*#mobile .slogan{*/
+      /*font-size: 17px;*/
+    /*}*/
   }
   @media screen and (max-width: 425px){
     .topnav .nav_button{
@@ -329,8 +330,13 @@
       margin-left: 0;
     }
   }
+
   @media screen and (min-width: 1024px){
+    .nav_button{
+      display: none;
+    }
     .topnav a{
+      display: inline;
       margin-left: -2%;
     }
     .topnav{
@@ -341,9 +347,9 @@
       margin-top: 5%;
       margin-left: 15px;
     }
-    #desktop .slogan{
-      margin-left: 20%;
-    }
+    /*#desktop .slogan{*/
+      /*margin-left: 20%;*/
+    /*}*/
     #upwards{
       font-size: 33px ;
     }
@@ -387,23 +393,23 @@
     #com{
       font-size: 30px;
     }
-    #desktop .slogan{
-      margin-left: 25%;
-    }
+    /*#desktop .slogan{*/
+      /*margin-left: 25%;*/
+    /*}*/
   }
   @media screen and (min-width: 1300px) {
     #myTopnav{
       margin-left: 20%;
     }
-    .slogan{
-      margin-left: 25%;
+    /*.slogan{*/
+      /*margin-left: 25%;*/
+    /*}*/
+  }
+  @media screen and (min-width: 1400px){
+    #desktop .slogan{
+      margin-left: 30%;
     }
   }
-  /*@media screen and (min-width: 1400px){*/
-    /*#desktop .slogan{*/
-      /*margin-left: 30%;*/
-    /*}*/
-  /*}*/
   @media screen and (min-width: 1500px){
     #myTopnav{
       margin-left: 31%;
