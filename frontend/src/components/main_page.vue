@@ -311,8 +311,8 @@ export default {
       height: 400px;
       width: 300px;
       text-align: center;
-      margin-left: 28px;
-      margin-right: 35px;
+      margin-left: 20%;
+      margin-right: 20%;
     }
     .carousel-cell .carousel-val {
       margin: 15px 0;
@@ -342,8 +342,8 @@ export default {
       height: 400px;
       width: 300px;
       text-align: center;
-      margin-left: 120px;
-      margin-right: 120px;
+      margin-left: 25%;
+      margin-right: 25%;
     }
     .carousel-cell .carousel-val {
       margin: 15px 0;

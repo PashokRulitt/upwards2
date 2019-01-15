@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Main from './components/main_page.vue'
 import Login from './components/login.vue'
+import NotFoundPage from './components/notFound.vue'
 
 Vue.use(Router)
 
@@ -19,6 +20,11 @@ export default new Router({
       path: '/login',
       name: 'login',
       component: Login
+    },
+    {
+      path: '*',
+      name: 'NotFound',
+      component: NotFoundPage
     }
     // {
     //   path: '/about',

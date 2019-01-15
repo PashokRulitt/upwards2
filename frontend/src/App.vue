@@ -284,10 +284,10 @@ export default {
     }
     #login_topnav{
       font-size: 20px;
-        margin-left: 10px;
-        margin-right: 0px;
+      margin-left: 10px;
+      margin-right: 0px;
       margin-top: 13px;
-      height: 20px;
+      height: 30px;
       text-align: center;
     }
     #burger_topnav{
@@ -332,7 +332,7 @@ export default {
       margin-left: 10px;
       margin-right: 0px;
       margin-top: 13px;
-      height: 20px;
+      height: 30px;
       text-align: center;
     }
     #burger_topnav{
@@ -377,7 +377,7 @@ export default {
       margin-left: 10px;
       margin-right: 0px;
       margin-top: 13px;
-      height: 44px;
+      height: 53px;
       text-align: center;
     }
     #burger_topnav{
