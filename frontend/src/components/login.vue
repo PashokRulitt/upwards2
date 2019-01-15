@@ -18,56 +18,56 @@
 </template>
 
 <script>
-    export default {
-        name: "login",
-      data(){
-          return{
-            info: [
-              {
-                name: 'name',
-                value: '',
-                placeholder: '        Enter name',
-                type: 'text',
-                class: 'first',
-                pattern: null
-              },
-              {
-                name: 'username',
-                value: '',
-                placeholder: '         Enter username',
-                type: 'text',
-                class: 'first',
-                pattern: /^[a-z0-9_-]{3,16}$/
-              },
-              {
-                name: 'email',
-                value: '',
-                placeholder: '        Enter email',
-                type: 'text',
-                class: 'second',
-                pattern: /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
-              },
-              {
-                name: 'password',
-                value: '',
-                placeholder: '        Enter password',
-                type: 'date',
-                class: 'second',
-                pattern: /(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$/
-              },
-              {
-                name: 'date',
-                value: '',
-                placeholder: '        Enter date',
-                type: 'date',
-                class: 'third',
-                pattern: /(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$/
-              },
-            ],
-            show_button:false,
-          }
-      }
+export default {
+  name: 'login',
+  data () {
+    return {
+      info: [
+        {
+          name: 'name',
+          value: '',
+          placeholder: '        Enter name',
+          type: 'text',
+          class: 'first',
+          pattern: null
+        },
+        {
+          name: 'username',
+          value: '',
+          placeholder: '         Enter username',
+          type: 'text',
+          class: 'first',
+          pattern: /^[a-z0-9_-]{3,16}$/
+        },
+        {
+          name: 'email',
+          value: '',
+          placeholder: '        Enter email',
+          type: 'text',
+          class: 'second',
+          pattern: /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+        },
+        {
+          name: 'password',
+          value: '',
+          placeholder: '        Enter password',
+          type: 'date',
+          class: 'second',
+          pattern: /(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$/
+        },
+        {
+          name: 'date',
+          value: '',
+          placeholder: '        Enter date',
+          type: 'date',
+          class: 'third',
+          pattern: /(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$/
+        }
+      ],
+      show_button: false
     }
+  }
+}
 </script>
 
 <style scoped>

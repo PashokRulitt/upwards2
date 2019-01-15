@@ -15,34 +15,34 @@
 </template>
 
 <script>
-  import Flickity from 'vue-flickity'
+import Flickity from 'vue-flickity'
 
-    export default {
-      components :{
-        Flickity
-      },
-        name: "carusel",
-      data() {
-        return {
-          flickityOptions: {
-            initialIndex: 6,
-            prevNextButtons: true,
-            pageDots: true,
-            wrapAround: true
+export default {
+  components: {
+    Flickity
+  },
+  name: 'carusel',
+  data () {
+    return {
+      flickityOptions: {
+        initialIndex: 6,
+        prevNextButtons: true,
+        pageDots: true,
+        wrapAround: true
 
-          }
-        }
-      },
-      // methods: {
-      //   next() {
-      //     this.$refs.flickity.next();
-      //   },
-      //
-      //   previous() {
-      //     this.$refs.flickity.previous();
-      //   }
-      // }
+      }
     }
+  }
+  // methods: {
+  //   next() {
+  //     this.$refs.flickity.next();
+  //   },
+  //
+  //   previous() {
+  //     this.$refs.flickity.previous();
+  //   }
+  // }
+}
 </script>
 
 <style scoped>

@@ -57,52 +57,40 @@
         </div>
         <flickity ref="flickity" :options="flickityOptions">
           <div class="carousel-cell" >
-            <div>
-            <img height="192px" width="200px" src="../assets/success.png" alt=""><!--200x192-->
-            <p>Success Stories</p>
-            <p>Always wanted to be the next Steve Jobs or Larry Page? But not sure where to start? Hear real stories, how different people became those, who would change the world</p>
+            <img height="192px" src="../assets/success.png" alt=""><!--200x192-->
+            <p class="carousel-name">Success Stories</p>
+            <p class="carousel-val">Always wanted to be the next Steve Jobs or Larry Page? But not sure where to start? Hear real stories, how different people became those, who would change the world</p>
             <button class="learn_more">Learn more:</button>
-            </div>
           </div>
           <div class="carousel-cell">
-            <div >
-              <img height="192px" width="275px" src="../assets/comunity.png" alt=""><!--369x194-->
-              <p>Community</p>
-              <p>Got a question? We`ve got an answer! Join us on our forum, where thousands of users are ready to give you some piece of advice!</p>
+              <img height="192px"  src="../assets/comunity.png" alt=""><!--369x194-->
+              <p class="carousel-name">Community</p>
+              <p class="carousel-val">Got a question? We`ve got an answer! Join us on our forum, where thousands of users are ready to give you some piece of advice!</p>
               <button class="learn_more">Learn more:</button>
-            </div>
           </div>
           <div class="carousel-cell">
-            <div >
-            <img height="192px" width="200px" src="../assets/progress.png" alt=""><!--238x194-->
-            <p>Self-progress</p>
-            <p>Self-improving is important. Especially when you are a programmer. So if you wanted to check your knowledge on something you can get our tests. Or just start learning something new!</p>
+            <img height="192px"  src="../assets/progress.png" alt=""><!--238x194-->
+            <p class="carousel-name">Self-progress</p>
+            <p class="carousel-val">Self-improving is important. Especially when you are a programmer. So if you wanted to check your knowledge on something you can get our tests. Or just start learning something new!</p>
             <button class="learn_more">Learn more:</button>
           </div>
-          </div>
           <div class="carousel-cell">
-            <div >
-            <img height="192px" width="200px" src="../assets/events.png" alt=""><!--200x192-->
-            <p>Event Calendar</p>
-            <p>What part of proggrammers society are you? Maybe you`re a born tester — ready for anything to find «that» nasty bug. Or you`re software engineer with logic and attention. Find out!</p>
+            <img height="192px"  src="../assets/events.png" alt=""><!--200x192-->
+            <p class="carousel-name">Event Calendar</p>
+            <p class="carousel-val"v>What part of proggrammers society are you? Maybe you`re a born tester — ready for anything to find «that» nasty bug. Or you`re software engineer with logic and attention. Find out!</p>
             <button class="learn_more">Learn more:</button>
           </div>
-          </div>
           <div class="carousel-cell">
-            <div >
-            <img height="192px" width="310px" src="../assets/team.png" alt=""><!--313x203-->
-            <p>Team Builder</p>
-            <p>What part of proggrammers society are you? Maybe you`re a born tester — ready for anything to find «that» nasty bug. Or you`re software engineer with logic and attention. Find out!</p>
+            <img height="192px" src="../assets/team.png" alt=""><!--313x203-->
+            <p class="carousel-name">Team Builder</p>
+            <p class="carousel-val">What part of proggrammers society are you? Maybe you`re a born tester — ready for anything to find «that» nasty bug. Or you`re software engineer with logic and attention. Find out!</p>
             <button class="learn_more">Learn more:</button>
           </div>
-          </div>
           <div class="carousel-cell">
-            <div >
-              <img height="192px" width="200px" src="../assets/dictionary.png" alt=""><!--272x192-->
-              <p>Dictionary</p>
-              <p>Came across an unknown word? Still being afraid of «object-oriented» or «reference type»? Well, you`re not alone. Find that out and more in our programmer dictionary!</p>
+              <img height="192px" src="../assets/dictionary.png" alt=""><!--272x192-->
+              <p class="carousel-name">Dictionary</p>
+              <p class="carousel-val">Came across an unknown word? Still being afraid of «object-oriented» or «reference type»? Well, you`re not alone. Find that out and more in our programmer dictionary!</p>
               <button class="learn_more">Learn more:</button>
-            </div>
           </div>
           </flickity>
       </main>
@@ -110,39 +98,55 @@
   </div>
 </template>
 
-
 <script>
-  import Flickity from 'vue-flickity'
+import Flickity from 'vue-flickity'
 
-    export default {
-      components :{
-        Flickity
-      },
-        name: "main",
-        data(){
-          return{
-            flickityOptions: {
-              autoPlay:true,
-              draggable:true,
-              initialIndex: 6,
-              prevNextButtons: true,
-              pageDots: true,
-              wrapAround: true
-            }
-          }
+export default {
+  components: {
+    Flickity
+  },
+  name: 'main',
+  data () {
+    return {
+      flickityOptions: {
+        autoPlay: true,
+        draggable: true,
+        initialIndex: 6,
+        prevNextButtons: true,
+        pageDots: true,
+        wrapAround: true
       }
     }
+  }
+}
 </script>
 
 <style>
-  #mobile{
-    display: none;
-  }
   *{
     margin: 0px;
     padding: 0px;
   }
-  .learn_more{
+  #mobile{
+    display: none;
+  }
+  /*Slogan*/
+  .slogan{
+    font-family: 'Comfortaa', cursive;
+    font-weight: 100;
+    font-size: 25px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    margin-left: 10%;
+  }
+  .programmers{
+    background-color: #7CDAC1;
+  }
+  .programmers2{
+    background-color: #F2D083;
+  }
+
+ /*Button*/
+ .learn_more{
     color: white;
     border: none;
     background-color: #576574;
@@ -150,6 +154,7 @@
     padding: 10px 30px;
     align-self: center;
   }
+  /*Desktop*/
   .wrapper1{
     text-align: center;
     margin-top: 101px;
@@ -256,83 +261,137 @@
     font-weight: 300;
     font-size: 22px;
   }
-  .slogan{
-    font-family: 'Comfortaa', cursive;
-    font-weight: 100;
-    font-size: 40px;
-    margin-top: 100px;
-    margin-left: 30%;
+
+  main{
+    margin-bottom: 60px;
   }
-  .programmers{
-    background-color: #7CDAC1;
-  }
-  .programmers2{
-    background-color: #F2D083;
-  }
-   main{
-    margin-bottom: 111px;
-  }
-  @media screen and (max-width: 1024px) {
-    body{
-      overflow-x: hidden;
+
+  @media screen and (min-width: 320px) {
+   #desktop{
+     display: none;
+   }
+    #mobile{
+      display: block;
     }
-    flickity{
-      width: 100%;
-    }
-    .carousel-cell{
-      background-color: #F3F3F3;
-      height: 500px;
-      width: 40%;
-      margin: 0px 15px;
-    }
-    .carousel-cell div{
-      margin-top: 30px;
-      margin-left: 25px;
+    .carousel-cell {
+      font-family: Comfortaa,cursive;
+      font-weight: 700;
+      font-size: 20px;
+      height: 400px;
+      width: 300px;
       text-align: center;
+      margin-left: 20px;
+      margin-right: 20px;
     }
-    .carousel-cell div p:nth-child(2){
-      font-family: 'Comfortaa', cursive;
-      font-weight: bold;
-      font-size: 26px;
-      margin-top: 20px;
-      text-align: center;
-    }
-    .carousel-cell div p:nth-child(3){
-      font-family: 'Roboto', sans-serif;
+    .carousel-cell .carousel-val {
+      margin: 15px 0;
+      font-family: Roboto,sans-serif;
       font-weight: 300;
-      font-size: 18px;
-      margin-bottom: 20px ;
-      margin-top: 20px;
+      font-size: 15px;
+    }
+    .carousel-cell img {
       text-align: center;
+      width: 200px;
+    }
+    .slogan{
+      margin-left: 15%;
+    }
+  }
+  @media screen and (min-width: 425px) {
+    #desktop{
+      display: none;
     }
     #mobile{
       display: block;
     }
+    .carousel-cell {
+      font-family: Comfortaa,cursive;
+      font-weight: 700;
+      font-size: 20px;
+      height: 400px;
+      width: 300px;
+      text-align: center;
+      margin-left: 28px;
+      margin-right: 35px;
+    }
+    .carousel-cell .carousel-val {
+      margin: 15px 0;
+      font-family: Roboto,sans-serif;
+      font-weight: 300;
+      font-size: 15px;
+    }
+    .carousel-cell img {
+      text-align: center;
+      width: 200px;
+    }
+    .slogan{
+      margin-left: 15%;
+    }
+  }
+  @media screen and (min-width: 767px) {
     #desktop{
       display: none;
     }
-
-    .midnav_m a{
-      margin-top: 10px;
-      margin-left: 5%;
-      margin-bottom: 20px;
+    #mobile{
+      display: block;
+    }
+    .carousel-cell {
+      font-family: Comfortaa,cursive;
+      font-weight: 700;
+      font-size: 20px;
+      height: 400px;
+      width: 300px;
+      text-align: center;
+      margin-left: 120px;
+      margin-right: 120px;
+    }
+    .carousel-cell .carousel-val {
+      margin: 15px 0;
+      font-family: Roboto,sans-serif;
+      font-weight: 300;
+      font-size: 15px;
+    }
+    .carousel-cell img {
+      text-align: center;
+      width: 200px;
+    }
+    .slogan{
+      font-size: 30px;
+      margin-left: 25%;
     }
   }
-  @media screen and (min-width: 532px) {
-    .carousel-cell {
-      width: 80%;
+  @media screen and (min-width: 1024px) {
+    #desktop{
+      display: block;
+    }
+    #mobile{
+      display: none;
+    }
+    .slogan{
+      font-size: 35px;
     }
   }
-  @media screen and (min-width: 816px) {
-    .carousel-cell {
-      width: 65%;
-      margin-left: 10%;
-      margin-right: 10%;
+  @media screen and (min-width: 1440px) {
+    #desktop{
+      display: block;
     }
-    .carousel-cell div {
-
-      margin-left: 20%;
-      margin-right: 20%;
+    #mobile{
+      display: none;
+    }
+    .slogan{
+      font-size: 45px;
+    }
+  }
+  @media screen and (min-width: 2560px) {
+    #desktop{
+      display: block;
+    }
+    #mobile{
+      display: none;
+    }
+    .slogan{
+      font-size: 60px;
+      margin-left: 35%;
     }
   }
 </style>
