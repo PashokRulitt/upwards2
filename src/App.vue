@@ -114,7 +114,7 @@ export default {
     display: none;
   }
   #login_topnav{
-    collor: #fff;
+    color: #fff;
     background-color: indianred;
     border-radius: 5px;
     padding-top: 5px;
