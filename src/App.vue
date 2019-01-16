@@ -52,6 +52,7 @@
             <a href="#">Twitter</a>
             <a href="#">Telegram</a>
             <a href="#">Facebook</a>
+            <a href="https://www.instagram.com/upwards_developers/?hl=ru" target="_blank">Instagram</a>
           </div>
 
         </div>
@@ -113,6 +114,7 @@ export default {
     display: none;
   }
   #login_topnav{
+    collor: #fff;
     background-color: indianred;
     border-radius: 5px;
     padding-top: 5px;
