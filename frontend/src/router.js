@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Main from './components/main_page.vue'
-import Login from './components/login.vue'
+import Login from './views/login.vue'
 import NotFoundPage from './components/notFound.vue'
 
 Vue.use(Router)
