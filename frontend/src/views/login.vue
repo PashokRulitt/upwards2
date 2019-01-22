@@ -1,7 +1,11 @@
 <template>
-  <div>
-    <loginFields></loginFields>
-    <logInUsing></logInUsing>
+  <div class="login-wrapper">
+    <div class="login-fields-wrapper">
+      <loginFields
+        class="loginFields"
+        :show_login="false"></loginFields>
+      <logInUsing class="logInIcons"></logInUsing>
+    </div>
   </div>
 </template>
 
@@ -15,5 +19,16 @@
 </script>
 
 <style scoped>
+ .login-wrapper{
+   height: max-content;
+ }
+ .login-fields-wrapper{
+   margin-top: 40px;
+   margin-left: 5%;
 
+ }
+ .logInIcons{
+   margin-top: 20px;
+  margin-left: 43px;
+ }
 </style>

@@ -63,21 +63,21 @@
             <button class="learn_more">Learn more:</button>
           </div>
           <div class="carousel-cell">
-              <img height="192px"  src="../assets/comunity.png" alt=""><!--369x194-->
+              <img height="192px" src="../assets/comunity.png" alt=""><!--369x194-->
               <p class="carousel-name">Community</p>
               <p class="carousel-val">Got a question? We`ve got an answer! Join us on our forum, where thousands of users are ready to give you some piece of advice!</p>
               <button class="learn_more">Learn more:</button>
           </div>
           <div class="carousel-cell">
-            <img height="192px"  src="../assets/progress.png" alt=""><!--238x194-->
+            <img height="192px" src="../assets/progress.png" alt=""><!--238x194-->
             <p class="carousel-name">Self-progress</p>
             <p class="carousel-val">Self-improving is important. Especially when you are a programmer. So if you wanted to check your knowledge on something you can get our tests. Or just start learning something new!</p>
             <button class="learn_more">Learn more:</button>
           </div>
           <div class="carousel-cell">
-            <img height="192px"  src="../assets/events.png" alt=""><!--200x192-->
+            <img height="192px" src="../assets/events.png" alt=""><!--200x192-->
             <p class="carousel-name">Event Calendar</p>
-            <p class="carousel-val"v>What part of proggrammers society are you? Maybe you`re a born tester — ready for anything to find «that» nasty bug. Or you`re software engineer with logic and attention. Find out!</p>
+            <p class="carousel-val">What part of proggrammers society are you? Maybe you`re a born tester — ready for anything to find «that» nasty bug. Or you`re software engineer with logic and attention. Find out!</p>
             <button class="learn_more">Learn more:</button>
           </div>
           <div class="carousel-cell">

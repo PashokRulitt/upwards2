@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Main from './components/main_page.vue'
+import Main from './views/main_page.vue'
 import Login from './views/login.vue'
-import NotFoundPage from './components/notFound.vue'
+import NotFoundPage from './views/notFound.vue'
 
 Vue.use(Router)
 

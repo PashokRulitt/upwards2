@@ -12,9 +12,9 @@
 </template>
 
 <script>
-    export default {
-        name: "notFound"
-    }
+export default {
+  name: 'notFound'
+}
 </script>
 
 <style scoped>

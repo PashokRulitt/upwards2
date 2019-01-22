@@ -102,6 +102,7 @@ export default {
     color: black;
   }
   .header{
+    height: 87px;
     width: 100%;
     display: flex;
   }
@@ -114,11 +115,15 @@ export default {
   }
   #login_topnav{
     background-color: indianred;
+    color: white;
     border-radius: 5px;
     padding-top: 5px;
     padding-bottom: 5px;
     border: none;
-
+  }
+ #login_topnav:hover{
+    background-color:#fcac45 ;
+    color: white;
   }
   #header__logo{
     font-weight: bold;
@@ -441,11 +446,6 @@ export default {
         /*font-size: 30px;*/
       /*}*/
   /*}*/
-
-
-
-
-
   /*FOOTER*/
   .foot_first_m{
     width: 100%;
